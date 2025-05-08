@@ -94,6 +94,9 @@ body{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
+
 }
 
 .card{
@@ -113,16 +116,16 @@ body{
 }
 
 .play {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     background-color: #1fdf64;
     border-radius: 50%;
-    padding: 4px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    /* bottom: 88px; */
+    bottom: 88px;
     top: 168px;
     right: 17px;
     opacity: var(--a);
