@@ -90,15 +90,14 @@ body {
 
 .spotifyPlaylists {
     padding: 16px;
-    position: relative;
-}
+   }
 
 .cardContainer {
     margin: 10px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 70vh;
 
 }
@@ -190,6 +189,16 @@ body {
     gap: 16px;
 }
 
+.hamburger{
+    display: none;
+}
+.hamburgerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
 .songList{
     height: 544px;
     overflow: auto;
@@ -261,4 +270,33 @@ body {
 .songinfo, .songtime{
     color: black;
     padding: 0 12px;
+}
+
+@media (max-width: 1400px){
+    .left{
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: black;
+
+    }
+    .left .close{
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 30px;
+    }
+    .right{
+        width: 100vw;
+    }
+
+    .playbar{
+        width: 95vw;
+    }
+
+    .hamburger{
+        display: block;
+    }
 }
